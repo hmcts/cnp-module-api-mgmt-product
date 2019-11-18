@@ -1,8 +1,14 @@
-variable "api_mgmt_rg" {}
+variable "api_mgmt_rg" {
+  description = "Resource group that api management is in, e.g. core-infra-demo"
+}
 
-variable "api_mgmt_name" {}
+variable "api_mgmt_name" {
+  description = "Name of the api management, e.g. core-infra-demo"
+}
 
-variable "name" {}
+variable "name" {
+  description = "Name of the product"
+}
 
 variable "subscription_required" {
   default     = true
@@ -10,7 +16,7 @@ variable "subscription_required" {
 }
 
 variable "subscriptions_limit" {
-  default = 20
+  default     = 20
   description = "The number of subscriptions a user can have to this Product at the same time"
 }
 
@@ -20,7 +26,8 @@ variable "approval_required" {
 }
 
 variable "published" {
-  default = true
+  default     = true
+  description = "If the product should be published"
 }
 
 
