@@ -1,3 +1,7 @@
+# cnp-module-api-mgmt-product
+
+A terraform module for creating a product in API mgmt
+
 ## Inputs
 
 | Name | Description | Type | Default |
