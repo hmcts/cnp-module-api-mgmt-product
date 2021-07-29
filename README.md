@@ -13,11 +13,10 @@ A terraform module for creating a product in API mgmt
 | published | If the product should be published | string | `"true"` |
 | subscription\_required | Is a Subscription required to access API's included in this Product? | string | `"true"` |
 | subscriptions\_limit | The number of subscriptions a user can have to this Product at the same time | string | `"20"` |
-| product\_access\_control\_groups | A list of API Management Groups, such as, Administrators, Developers, Guest | list(string) | `[""]` |
+| product\_access\_control\_groups | A list of API Management Groups, such as, Administrators, Developers, Guest | list(string) | `[]` |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
 | product\_id | ID of the product |
-
