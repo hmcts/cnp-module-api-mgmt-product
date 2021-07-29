@@ -32,6 +32,6 @@ variable "published" {
 
 variable "product_access_control_groups" {
   type        = list(string)
-  default     = [""]
+  default     = []
   description = "A list of API Management Groups"
 }
