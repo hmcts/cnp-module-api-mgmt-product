@@ -35,3 +35,8 @@ variable "product_access_control_groups" {
   default     = []
   description = "A list of API Management Groups, such as, administrators, developers, guests. Note: Groups must be in lowercase"
 }
+variable "product_policy" {
+  type        = string
+  description = "Project Product Policy"
+  default     = ""
+}
