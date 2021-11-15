@@ -14,6 +14,7 @@ A terraform module for creating a product in API mgmt
 | subscription\_required | Is a Subscription required to access API's included in this Product? | string | `"true"` |
 | subscriptions\_limit | The number of subscriptions a user can have to this Product at the same time | string | `"20"` |
 | product\_access\_control\_groups | A list of API Management Groups, such as, administrators, developers, guests. Note: Groups must be in lowercase | list(string) | `[]` |
+| product\_policy | Product Policy | string | `""` | 
 
 ## Outputs
 
