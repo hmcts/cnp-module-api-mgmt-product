@@ -3,6 +3,7 @@ resource "azurerm_api_management_product" "product" {
   api_management_name   = var.api_mgmt_name
   resource_group_name   = var.api_mgmt_rg
   display_name          = var.name
+  description           = var.description
   subscription_required = var.subscription_required
   subscriptions_limit   = var.subscriptions_limit
   approval_required     = var.approval_required

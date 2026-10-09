@@ -10,6 +10,7 @@ A terraform module for creating a product in API mgmt
 | api\_mgmt\_rg | Resource group that api management is in, e.g. core-infra-demo | string | n/a |
 | approval\_required | Do subscribers need to be approved prior to being able to use the Product? | string | `"true"` |
 | name | Name of the product | string | n/a |
+| description | Description of the product | string | `null` |
 | published | If the product should be published | string | `"true"` |
 | subscription\_required | Is a Subscription required to access API's included in this Product? | string | `"true"` |
 | subscriptions\_limit | The number of subscriptions a user can have to this Product at the same time | string | `"20"` |
