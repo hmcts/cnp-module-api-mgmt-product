@@ -40,3 +40,9 @@ variable "product_policy" {
   description = "Project Product Policy"
   default     = ""
 }
+
+variable "description" {
+  type        = string
+  default     = null
+  description = "Description of the product"
+}
